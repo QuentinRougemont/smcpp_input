@@ -17,7 +17,7 @@ the software depends on python, anaconda and other libraries documented on the s
 
 ## Major Steps 
 
-   * __1 vcf conversion__
+   * _1 vcf conversion_
 		run script `01_scripts/00_vcf_to_smcc_jSFS.sh` to produce smcpp input  
 		requirement: an indexed vcffile
 		
@@ -25,7 +25,7 @@ the software depends on python, anaconda and other libraries documented on the s
 		run script `01_scripts/01_smcc_cv.sh` that will use the [cv](https://github.com/popgenmethods/smcpp) function to estimates population size change.
 		You need to provide a mutation rate for the focal species.
 		
-   * _3 ploting __
+   * _3 ploting_
 		This only requires the plot command, an example can be find in:  
 		`01_scripts/03_plotting_size_change.sh`  
 		
