@@ -29,7 +29,7 @@ the software depends on python, anaconda and other libraries documented on the s
 		This only requires the plot command, an example can be find in:  
 		`01_scripts/03_plotting_size_change.sh`  
 		
-   * **_4 estimation pop split time_**  
+   * **_4 estimation pop split time_**  s
 		run script `01_scripts/04_pairwise.sfs.sh` to create pairwise sfs  
 		then run script `01_scripts/05_plot_split.sh` to create the plot  
 		If you want units to be in generation you must provide a generation time (in Years).		
