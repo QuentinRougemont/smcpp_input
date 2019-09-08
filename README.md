@@ -18,8 +18,9 @@ the software depends on python, anaconda and other libraries documented on the s
 ## Major Steps 
 
    * **_1 vcf conversion_**
-		run script `01_scripts/00_vcf_to_smcc_jSFS.sh` to produce smcpp input  
+		run script `01_scripts/00_vcf_to_smc_jSFS.sh` to produce a jsfs smcpp input  
 		requirement: an indexed vcffile
+		run script `01_scripts/00_vcf_to_smc.sh` to produce a single pop smcpp input
 		
    * **_2 estimates population size change through time_**
 		run script `01_scripts/01_smcc_cv.sh` that will use the [cv](https://github.com/popgenmethods/smcpp) function to estimates population size change.
