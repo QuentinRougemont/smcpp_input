@@ -16,7 +16,7 @@ singularity exec -B /scratch/path/to/user/:/scratch/path/to/user\
         -B /groups/other/path/:/groups/other/path  \
         docker://terhorst/smcpp:latest \
         smc++ vcf2smc "$input" \
-        $outfolder/"$output" \
+        $outfolder/"$pop/"$output" \
         "$chromosome" \
         "$pop":"$ind"
 

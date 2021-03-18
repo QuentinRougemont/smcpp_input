@@ -1,10 +1,14 @@
 #!/bin/bash
 
-pop=$1
-if [[ -z "$pop" ]]
-then
-    echo "error please provide pop_name"
-    exit
+#source /path/to/env/envsingularity-3.X.X.sh
+
+if [ $# -ne 1  ]; then
+    echo "USAGE: $0 <pop>"
+    echo "Expecting a population file with individuals name in one single colomn"
+    exit 1
+else
+    pop=$1
+    echo "pop file is : ${pop}"
 fi
 
 inputfolder=02_input_test  #folder created from previous conversion  script
@@ -12,8 +16,8 @@ outfolder="03_cv"      #where results will be
 mkdir -p "$outfolder"/"$pop"
 
 echo "running smcpp for population $pop "
-singularity exec -B /scratch/qrougemont:/scratch/qrougemont \
-        -B /groups/supergene:/groups/supergene  \
+singularity exec -B /path/to/folder/:/path/to/folder/ \
+        -B /path/to/data/:/path/to/data/  \
         docker://terhorst/smcpp:latest \
         smc++ cv --cores 2 \
         --out "$outfolder"/$pop \
